@@ -8,7 +8,7 @@
 						<form:SimpleForm layout="ResponsiveGridLayout" adjustLabelSpan="true" editable="true" labelSpanL="3" labelSpanM="3" emptySpanL="3" emptySpanM="3">
 							<form:content>
 								<Label text="Contry" />
-								<Select forceSelection="false">
+								<Select id="select" forceSelection="false">
 									<items>
 										<core:Item key="BR" text="Brazil"/>
 										<core:Item key="CA" text="Canada"/>
@@ -16,18 +16,15 @@
 									</items>
 								</Select>
 								<Label text="Year"/>
-								<DatePicker placeholder="Year" displayFormat="yyyy"/>
+								<DatePicker id="datepicker" placeholder="Year" displayFormat="yyyy"/>
 								<Label/>
 								<Button text="Search" icon="sap-icon://search" press="onSearch"/>
 							</form:content>
 						</form:SimpleForm>
-						<commons:Timeline showHeaderBar="false" alignment="Left">
-							<commons:TimelineItem dateTime="2019-01-01" title="Title A" text="Text A" icon="sap-icon://date-time" />
-							<commons:TimelineItem dateTime="2019-02-01" title="Title B" text="Text B" icon="sap-icon://date-time" />
-							<commons:TimelineItem dateTime="2019-03-01" title="Title C" text="Text C" icon="sap-icon://date-time" />
-							<commons:TimelineItem dateTime="2019-04-01" title="Title D" text="Text D" icon="sap-icon://date-time" />
-							<commons:TimelineItem dateTime="2019-05-01" title="Title E" text="Text E" icon="sap-icon://date-time" />
-							<commons:TimelineItem dateTime="2019-06-01" title="Title F" text="Text F" icon="sap-icon://date-time" />
+						<commons:Timeline id="timeline" showHeaderBar="false" alignment="Left">
+							<commons:content>
+								
+							</commons:content>
 						</commons:Timeline>
 					</content>
 				</Page>
