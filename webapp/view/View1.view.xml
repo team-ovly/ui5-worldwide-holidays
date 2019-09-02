@@ -3,16 +3,13 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="Worldwide Holidays">
+				<Page id="page" busyIndicatorDelay="0" busy="false" title="Worldwide Holidays">
 					<content>
 						<form:SimpleForm layout="ResponsiveGridLayout" adjustLabelSpan="true" editable="true" labelSpanL="3" labelSpanM="3" emptySpanL="3" emptySpanM="3">
 							<form:content>
 								<Label text="Contry" />
 								<Select id="select" forceSelection="false">
 									<items>
-										<core:Item key="BR" text="Brazil"/>
-										<core:Item key="CA" text="Canada"/>
-										<core:Item key="ES" text="Spain"/>
 									</items>
 								</Select>
 								<Label text="Year"/>
